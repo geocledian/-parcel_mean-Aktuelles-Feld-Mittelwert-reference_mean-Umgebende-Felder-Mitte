@@ -14,12 +14,6 @@ The following modes are supported:
 ![gauge](doc/img/gauge_50.png)
 ![gauge](doc/img/gauge_75.png)
 
-- pie<br>
-![pie](doc/img/pie.png)
-
-- donut<br>
-![donut](doc/img/donut.png)
-
 ## Configuration
 This widget is customizeable via HTML attributes and supports the setting of the following attributes.
 
