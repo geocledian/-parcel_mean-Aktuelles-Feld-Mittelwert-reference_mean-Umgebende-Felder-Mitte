@@ -409,18 +409,9 @@ Vue.component('gc-netarea', {
         if(response.status === 200){
           try {
             var result  = response.data;
-            if (this.apiMajorVersion === 3) {
-              if (result.content === "key is not authorized" || result.content === "api key validity expired") {
-                this.api_err_msg = result.content;
-                this.isloading = false;
-                return;
-              }
-              if (result.hasOwnProperty("netarea")) {
-                this.netarea = result;
-              }
-            }
             if (this.apiMajorVersion === 4) {
               this.netarea = result.content;
+              this.isloading = false;
             }
           } catch (err) {
             console.error(err);
