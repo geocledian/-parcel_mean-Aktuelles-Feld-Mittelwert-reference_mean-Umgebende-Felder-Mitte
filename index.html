@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta charset="utf-8">
+  
+  <title>GC net area</title>
+
+
+  <!--GC netarea component begin -->
+  
+  <!-- loads also dependent css files via @import -->
+  <link href="css/gc-netarea.css" rel="stylesheet">
+  <!-- init script for components -->
+  <script id="gc-netarea-init" type="text/javascript" src="js/gc-netarea-init.js"></script>
+  
+  <!--GC netarea component end -->
+
+  <style>
+    body {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      line-height: 1.1em;
+      font-size: 0.9rem;
+    }
+    .gc-netarea-chart-gauge {
+      height: 9em;
+      width: 14em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="gc-app" class="is-mobile section">
+    <div class="is-inline-block" style="width: 300px; margin: 20px;">
+      <gc-netarea chartid="netarea1" 
+                gc-apikey="39553fb7-7f6f-4945-9b84-a4c8745bdbec" 
+                gc-host="geocledian.com" 
+                gc-parcel-id="4483"
+                gc-mode="gauge">
+      </gc-netarea>
+    </div>
+   
+  </div>
+
+</body>
+
+</html>

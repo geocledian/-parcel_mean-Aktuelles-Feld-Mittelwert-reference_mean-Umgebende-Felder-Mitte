@@ -1,0 +1,125 @@
+/* font-awesome 5.3.1*/
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+/* bulma 0.6.2 */
+@import 'bulma.min.css';
+@import 'bulma-ext/bulma-calendar.min.css';
+/* billboard.js v3.5.1 */
+@import 'billboard.min.css';
+@import '../../gc-styles/gc-style.css';
+
+.chartSpinner {
+    position: relative;
+    z-index: 1100;
+    top: 50%;
+    left: 10px;
+}
+
+.chartSpinner>div {
+    background-color: #EF7D00 !important;
+}
+
+
+.gc-netarea {
+    /* max-height: auto!important; */
+    /* margin-top: 0.15rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    margin-bottom: 0.15rem; */
+    display: block;
+
+    /* always center together with title 
+    width: 300px;
+    margin: 0 auto; */
+
+    /* svg-container 
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;*/
+}
+.gc-netarea-chart-gauge {
+    margin: 0 auto;
+    text-align: center;
+    height: 9em;
+}
+.gc-netarea-chart-donut{
+    margin: 0 auto;
+    text-align: center;
+    height: 16em;
+}
+.gc-netarea-chart-pie{
+    /* margin: 0 auto; */
+    text-align: center; 
+    height: 11em;
+    margin-bottom: -3em;
+}
+
+/* spinner */
+.netarea-spinner {
+    margin: 2em 0em 5.25em 0em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.netarea-spinner>div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.netarea-spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.netarea-spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.netarea-spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.netarea-spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
